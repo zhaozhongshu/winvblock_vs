@@ -22,8 +22,15 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WvHTTP64", "httpdisk64.vcpr
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aoe32", "aoe.vcproj", "{C1D6467C-C564-4EA7-8766-0DE3D57F79A2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C1D6467C-C564-4EA7-8766-0DE3D57F7962} = {C1D6467C-C564-4EA7-8766-0DE3D57F7962}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aoe64", "aoe64.vcproj", "{C1D6467C-C564-4EA7-8766-0DE3D57F79A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{166F2530-729A-4DF2-962B-5B255EE201E4} = {166F2530-729A-4DF2-962B-5B255EE201E4}
+		{C1D6467C-C564-4EA7-8766-0DE3D57F7961} = {C1D6467C-C564-4EA7-8766-0DE3D57F7961}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

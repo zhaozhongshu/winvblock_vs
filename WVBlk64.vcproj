@@ -273,8 +273,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|x64"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)\obj\$(ProjectName)"
+			IntermediateDirectory="$(SolutionDir)$(ConfigurationName)\obj\$(ProjectName)"
 			ConfigurationType="1"
 			>
 			<Tool
@@ -323,13 +323,15 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:X64"
 				AdditionalDependencies="ntoskrnl.lib hal.lib ntstrsafe.lib ksecdd.lib"
-				OutputFile="$(OutDir)\$(ProjectName).sys"
+				OutputFile="$(SolutionDir)$(ConfigurationName)\bin\$(ProjectName).sys"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="$(WDKPATH)\lib\WIN7\amd64"
+				AdditionalLibraryDirectories="&quot;$(WDKPATH)\lib\WIN7\amd64&quot;;&quot;$(SolutionDir)$(ConfigurationName)\bin&quot;"
 				GenerateManifest="false"
 				IgnoreAllDefaultLibraries="true"
 				GenerateDebugInformation="true"
+				ProgramDatabaseFile="$(SolutionDir)$(ConfigurationName)\pdb\$(TargetName).pdb"
 				SubSystem="3"
 				Driver="1"
 				OptimizeReferences="2"

@@ -184,8 +184,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
-			IntermediateDirectory="$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)\obj\$(ProjectName)"
+			IntermediateDirectory="$(SolutionDir)$(ConfigurationName)\obj\$(ProjectName)"
 			ConfigurationType="1"
 			>
 			<Tool
@@ -235,12 +235,13 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="ntoskrnl.lib hal.lib int64.lib ntstrsafe.lib exsup.lib ksecdd.lib WVBlk32.lib bufferoverflowK.lib"
-				OutputFile="$(OutDir)\$(ProjectName).sys"
+				OutputFile="$(SolutionDir)$(ConfigurationName)\bin\$(ProjectName).sys"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="&quot;$(WDKPATH)\lib\WIN7\i386&quot;;&quot;$(ProjectDir)Release&quot;"
+				AdditionalLibraryDirectories="&quot;$(WDKPATH)\lib\WIN7\i386&quot;;&quot;$(SolutionDir)$(ConfigurationName)\bin&quot;"
 				GenerateManifest="false"
 				IgnoreAllDefaultLibraries="true"
 				GenerateDebugInformation="true"
+				ProgramDatabaseFile="$(SolutionDir)$(ConfigurationName)\pdb\$(TargetName).pdb"
 				SubSystem="3"
 				Driver="1"
 				OptimizeReferences="2"
