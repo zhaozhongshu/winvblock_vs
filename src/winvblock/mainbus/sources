@@ -1,0 +1,6 @@
+INCLUDES=..\..\include		
+TARGETNAME=mainbus		
+TARGETTYPE=DRIVER_LIBRARY		
+TARGETPATH=obj			
+SOURCES=mainbus.c busirp.c dummyirp.c			
+C_DEFINES=-DPROJECT_WV=1		

@@ -1,0 +1,9 @@
+INCLUDES=..\include;$(DDK_INC_PATH);$(BASEDIR)\inc\mfc42;$(BASEDIR)\src\network\inc			
+TARGETNAME=WvHTTP32				
+TARGETTYPE=DRIVER				
+TARGETPATH=obj				
+TARGETLIBS=..\\..\\bin\\WVBlk32.lib   \
+           $(DDK_LIB_PATH)\\ndis.lib      \
+           $(SDK_LIB_PATH)\libcntpr.lib    
+SOURCES=ksocket.c ktdi.c httpdisk.c bus.c httpdisk.rc				
+C_DEFINES=-DPROJECT_AOE=1			

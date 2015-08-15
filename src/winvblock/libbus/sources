@@ -1,0 +1,6 @@
+INCLUDES=..\..\include		
+TARGETNAME=libbus		
+TARGETTYPE=DRIVER_LIBRARY		
+TARGETPATH=obj			
+SOURCES=libbus.c pnp.c			
+C_DEFINES=-DPROJECT_WV=1		

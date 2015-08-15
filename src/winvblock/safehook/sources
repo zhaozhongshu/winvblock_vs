@@ -1,0 +1,6 @@
+INCLUDES=..\..\include		
+TARGETNAME=safehook		
+TARGETTYPE=DRIVER_LIBRARY		
+TARGETPATH=obj			
+SOURCES=pdo.c probe.c fdo.c			
+C_DEFINES=-DPROJECT_WV=1		

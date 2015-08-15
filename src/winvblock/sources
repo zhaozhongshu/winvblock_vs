@@ -1,0 +1,8 @@
+INCLUDES=..\include		
+TARGETNAME=WVBlk32			
+TARGETTYPE=EXPORT_DRIVER		
+TARGETPATH=obj			
+LINKLIBS= libbus\\objfre_w2k_x86\\i386\\libbus.lib libdisk\\objfre_w2k_x86\\i386\\libdisk.lib ramdisk\\objfre_w2k_x86\\i386\\ramdisk.lib filedisk\\objfre_w2k_x86\\i386\\filedisk.lib wvlib\\objfre_w2k_x86\\i386\\wvlib.lib grub4dos\\objfre_w2k_x86\\i386\\grub4dos.lib safehook\\objfre_w2k_x86\\i386\\safehook.lib mainbus\\objfre_w2k_x86\\i386\\mainbus.lib			
+TARGETLIBS= libbus\\objfre_w2k_x86\\i386\\libbus.lib libdisk\\objfre_w2k_x86\\i386\\libdisk.lib ramdisk\\objfre_w2k_x86\\i386\\ramdisk.lib filedisk\\objfre_w2k_x86\\i386\\filedisk.lib wvlib\\objfre_w2k_x86\\i386\\wvlib.lib grub4dos\\objfre_w2k_x86\\i386\\grub4dos.lib safehook\\objfre_w2k_x86\\i386\\safehook.lib mainbus\\objfre_w2k_x86\\i386\\mainbus.lib			
+SOURCES=debug.c driver.c registry.c winvblock.rc device.c wv_stdlib.c wv_string.c disk.c			
+C_DEFINES=-DPROJECT_WV=1		

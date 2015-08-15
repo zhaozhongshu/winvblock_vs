@@ -1,0 +1,6 @@
+INCLUDES=..\..\include		
+TARGETNAME=libdisk		
+TARGETTYPE=DRIVER_LIBRARY		
+TARGETPATH=obj			
+SOURCES=libdisk.c dev_ctl.c scsi.c pnp.c			
+C_DEFINES=-DPROJECT_WV=1		

@@ -1,0 +1,6 @@
+INCLUDES=..\..\include		
+TARGETNAME=ramdisk		
+TARGETTYPE=DRIVER_LIBRARY		
+TARGETPATH=obj			
+SOURCES=ramdisk.c memdisk.c grub4dos.c			
+C_DEFINES=-DPROJECT_WV=1		

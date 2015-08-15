@@ -1,0 +1,6 @@
+INCLUDES=..\..\include		
+TARGETNAME=wvlib		
+TARGETTYPE=DRIVER_LIBRARY		
+TARGETPATH=obj			
+SOURCES=thread.c irp.c			
+C_DEFINES=-DPROJECT_WV=1		

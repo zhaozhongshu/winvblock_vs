@@ -1,0 +1,6 @@
+INCLUDES=..\..\include		
+TARGETNAME=filedisk		
+TARGETTYPE=DRIVER_LIBRARY		
+TARGETPATH=obj			
+SOURCES=filedisk.c grub4dos.c security.c			
+C_DEFINES=-DPROJECT_WV=1		
